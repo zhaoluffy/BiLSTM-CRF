@@ -1,0 +1,25 @@
+model: src.models.conv_character_model.ConvCharacterModel
+model_params:
+  use_char: True
+  dropout_keep_prob: 0.5
+  embedding.word_dim: 100
+  embedding.char_dim: 25
+  cnn.layers: 3
+  cnn.nhids: "25,25,25"
+  cnn.kwidths: "3,3,3"
+  cnn.nhid_default: 25
+  cnn.kwidth_default: 3
+  embedding_dropout_keep_prob: 0.9
+  nhid_dropout_keep_prob: 0.9
+  position_embeddings.enable: False
+  position_embeddings.combiner_fn: "tensorflow.add"
+  position_embeddings.num_positions: 50
+  encoder.num_units: 100
+  optimizer.name: adam
+  optimizer.lr_decay_rate: 0.9
+  optimizer.learning_rate: 0.001
+  optimizer.clip_gradients: 5
+  count_vocab_source: 0
+  count_vocab_char: 0
+  count_vocab_target: 0
+  keep_checkpoint_max: 5
