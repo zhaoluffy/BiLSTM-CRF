@@ -26,8 +26,8 @@ tf.flags.DEFINE_string("dev_file", "coNLL/eng.testa", """dev_file.""")
 
 tf.flags.DEFINE_string("test_file", "coNLL/eng.testb", """test_file.""")
 
-tf.flags.DEFINE_string("glove_file", "E:/models/glove.6B.100d.txt", """glove_file.""")
-# tf.flags.DEFINE_string("glove_file", "/data/guozhao/models/glove.6B/glove.6B.100d.txt",  """glove_file.""")
+tf.flags.DEFINE_string("glove_file", "glove.6B/glove.6B.100d.txt", """glove_file.""")
+# tf.flags.DEFINE_string("glove_file", "glove.6B/glove.6B.100d.txt",  """glove_file.""")
 
 tf.flags.DEFINE_string("trimmed_file", "coNLL/trimmed.glove.100", """trimmed_file.""")
 
