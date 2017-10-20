@@ -30,7 +30,7 @@ do not belong in any of the three previous categories, annotatin format like:
 
 ## Getting started
 
-	Download Glove vector https://nlp.stanford.edu/projects/glove/, and put it into data/golve.6B path, there we use glove.100
+	Download [Glove vector](https://nlp.stanford.edu/projects/glove/), and put it into data/golve.6B path, there we use glove.100
 	
 	run build_vocab.py to build vocabulary of data and get trimmed vector using pretrained glove vector
 	
