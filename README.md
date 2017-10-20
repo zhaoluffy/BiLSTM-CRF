@@ -1,4 +1,4 @@
-# BiLSTM-CRF
+# BiLSTM-CRF with tensorflow
 
 Named Entity Recognition with Tensorflow 
 This repo implements a NER model using Tensorflow (LSTM + CRF + chars embeddings).
