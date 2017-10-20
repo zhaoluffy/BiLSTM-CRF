@@ -5,6 +5,10 @@ This repo implements a NER model using Tensorflow (LSTM + CRF + chars embeddings
 
 State-of-the-art performance (F1 score between 90 and 91).
 
+## Requirements envirenment
+	python 3.6
+	tensorflow 1.3
+
 ## DataSet
 datasets contain four different types of named entities: locations, persons, organizations, and miscellaneous entities that
 do not belong in any of the three previous categories, annotatin format like:
@@ -31,7 +35,9 @@ do not belong in any of the three previous categories, annotatin format like:
 ## Getting started
 
 	Download [Glove vector](https://nlp.stanford.edu/projects/glove/), and put it into data/golve.6B path, there we use glove.100
+
+### build vocabulary and pretrained glove vector
+	python build_vocab.py 
 	
-	run build_vocab.py to build vocabulary of data and get trimmed vector using pretrained glove vector
-	
-	run ner.py start train model from scrach
+### start train ner model from scrach
+	python ner.py 
